@@ -4,7 +4,6 @@ import { View, Text, Image } from 'react-native'
 import styles from './company.style'
 import { icons } from '../../../constants'
 import { checkImageURL } from '../../../utils'
-import placeholderLogo from '../../../assets/images/job.jpg'
 
 const Company = ({ companyLogo, jobTitle, companyName, location }) => {
   return (
@@ -14,7 +13,7 @@ const Company = ({ companyLogo, jobTitle, companyName, location }) => {
           source={{
             uri: checkImageURL(companyLogo)
               ? companyLogo
-              : placeholderLogo
+              : "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg",
           }}
           style={styles.logoImage}
         />
